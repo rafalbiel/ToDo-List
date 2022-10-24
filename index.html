@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>statyczna tabela</h1>
+		<table border="1">
+			<tr>
+				<th>zadanie</th>
+				<th>status</th>
+			</tr>
+			<tr>
+				<td>kupić jajka</td>
+				<td>
+					<input
+						type="checkbox"
+						checked="true"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>ugotować jajka</td>
+				<td>
+					<input
+						type="checkbox"
+						checked="true"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>zjeść jajka</td>
+				<td>
+					<input
+						type="checkbox"
+						checked="true"
+					/>
+				</td>
+			</tr>
+		</table>
+
+		<h1>tabela renderowana przez js</h1>
+		<input
+			id="task-input"
+			type="text"
+			placeholder="zadanie"
+		/>
+		<button onclick="addTask()">dodaj zadanie</button>
+		<div
+			id="root"
+			style="margin-top: 20px"
+		></div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

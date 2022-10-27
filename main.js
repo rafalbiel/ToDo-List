@@ -36,7 +36,7 @@ function renderTable() {
 		};
 
 		deleteButtonElement.onclick = () => {
-			tasks.splice(index,1);
+			tasks.splice(index, 1);
 			renderTable();
 		};
 
